@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #1b1b2f, #0a0a12);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 70px;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 600;
+  color: #9b5cff;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  opacity: 0.85;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  padding: 120px 70px;
+}
+
+.hero-left h1 {
+  font-size: 58px;
+  margin-bottom: 18px;
+}
+
+.hero-left span {
+  color: #a855f7;
+}
+
+.subtitle {
+  opacity: 0.85;
+  line-height: 1.6;
+  margin-bottom: 34px;
+}
+
+.progress {
+  margin-bottom: 34px;
+}
+
+.progress-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.progress-track {
+  height: 10px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #9b5cff, #6366f1);
+}
+
+.actions {
+  display: flex;
+  gap: 18px;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #9b5cff, #6366f1);
+  box-shadow: 0 0 28px rgba(155,92,255,0.6);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.06);
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-logo {
+  width: 320px;
+  filter: drop-shadow(0 0 70px rgba(155,92,255,0.8));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 70px;
+}
+
+.card {
+  width: 260px;
+  padding: 26px;
+  background: rgba(255,255,255,0.07);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.55;
+}
