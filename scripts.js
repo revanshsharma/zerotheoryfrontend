@@ -2,7 +2,7 @@ const bar = document.querySelector(".progress-fill")
 let value = 0
 
 const timer = setInterval(() => {
-  if (value >= 30) {
+  if (value >= 40) {
     clearInterval(timer)
   } else {
     value++
