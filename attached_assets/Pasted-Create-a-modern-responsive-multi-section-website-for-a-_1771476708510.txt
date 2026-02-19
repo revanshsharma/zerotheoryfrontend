@@ -1,0 +1,80 @@
+Create a modern responsive multi-section website for a tech community called ZeroTheory: Zeroes to Heroes.
+Tech Requirements
+Pure HTML, CSS, and Vanilla JavaScript
+Dark mode default
+Fully responsive (mobile + desktop)
+Smooth animations and scroll effects
+Clean startup UI like Stripe / Vercel / Linear
+Include placeholders for logos and images
+No frameworks (no React, no Tailwind CDN)
+Brand Identity
+Theme: futuristic + gamified + Gen-Z tech startup
+Primary colors:
+Dark navy background (#0b0f19)
+Electric blue accent (#3b82f6)
+Subtle red glow (#ef4444)
+White text
+Fonts:
+Modern sans-serif (Inter / Poppins style)
+Mood: Feels like a mix of GitHub + Hack Club + a video game level-up screen.
+Pages / Sections
+1. Hero Section
+Include:
+Title: ZeroTheory
+Subtitle: Zeroes → Heroes
+Tagline:
+“Learn tech by building. Compete. Collaborate. Level Up.”
+Buttons:
+Join Community
+Start Challenge
+Add animated glowing background grid or particles using JavaScript canvas.
+Add placeholder for logo image: <img src="logo.png">
+2. About Section
+Explain ZeroTheory helps students learn:
+AI & ML
+Web Development
+Game Development
+Cloud & DevOps
+Real Projects
+Add card layout with icons.
+3. Zeroes to Heroes Challenge Section
+Gamified UI: Show 5 steps progression:
+Hello World
+GitHub Basics
+Build Project
+Collaborate
+Deploy
+Add animated progress bar (JS controlled)
+Add "Register Now" button placeholder.
+4. Community Benefits
+Cards:
+Mentorship
+Internships
+Hackathons
+Networking
+Certifications
+Hover glow effects.
+5. Leaderboard Section (Dynamic JS)
+Create a fake leaderboard table using JavaScript array: Name | XP | Level
+Populate dynamically using JS.
+6. Partners Section
+Show placeholder logos: partner1.png partner2.png partner3.png
+7. Join Section
+Form fields: Name Email Interest (dropdown)
+On submit: Prevent reload Show popup: "Welcome to ZeroTheory"
+8. Footer
+Include: Discord GitHub LinkedIn placeholders
+Text: © ZeroTheory Community
+JavaScript Features Required
+Navbar scroll shrink effect
+Smooth scrolling navigation
+Animated progress bar
+Dynamic leaderboard generation
+Form popup confirmation
+Background particle animation
+Output
+Generate complete working files:
+index.html
+style.css
+script.js
+All linked correctly and ready to run.

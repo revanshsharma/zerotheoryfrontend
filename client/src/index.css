@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+
+  /* Dark Navy Theme */
+  --background: 222 47% 7%; /* #0b0f19 */
+  --foreground: 210 40% 98%;
+
+  --card: 222 47% 10%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222 47% 10%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 217 91% 60%; /* Electric Blue #3b82f6 */
+  --primary-foreground: 222 47% 10%;
+
+  --secondary: 217 19% 27%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217 19% 27%;
+  --muted-foreground: 215 20% 65%;
+
+  --accent: 348 83% 47%; /* Red Glow #ef4444 mostly, simplified HSL */
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217 19% 27%;
+  --input: 217 19% 27%;
+  --ring: 217 91% 60%;
+  
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary-foreground;
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+  .box-glow {
+    box-shadow: 0 0 40px -10px rgba(59, 130, 246, 0.3);
+  }
+  .grid-bg {
+    background-image: linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+  }
+}
