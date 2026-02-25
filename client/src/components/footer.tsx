@@ -26,7 +26,13 @@ export function Footer() {
             <div className="flex gap-4">
               <a href="#" className="text-muted-foreground hover:text-white transition-colors"><Github className="w-5 h-5" /></a>
               <a href="#" className="text-muted-foreground hover:text-blue-400 transition-colors"><Twitter className="w-5 h-5" /></a>
-              <a href="#" className="text-muted-foreground hover:text-blue-600 transition-colors"><Linkedin className="w-5 h-5" /></a>
+              <a href="#" className="text-muted-foreground hover:text-blue-600 transition-colors"><<a 
+  href="https://www.linkedin.com/company/zerotheory-zeroes-to-heroes"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Linkedin className="h-5 w-5 hover:text-primary transition" />
+</a></a>
             </div>
           </div>
         </div>
