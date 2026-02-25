@@ -1,14 +1,14 @@
-import React from 'react';
+import { Button } from 'your-button-library';
 
 const Founder = () => {
-  return (
-    <div className="founder">
-      <h1>Founder</h1>
-      <a href="https://linktr.ee/Rev24" target="_blank" rel="noopener noreferrer">
-        <button>Contact Founder</button>
-      </a>
-    </div>
-  );
+    return (
+        <div>
+            <h1>Meet Our Founder</h1>
+            <Button asChild>
+                <a href="https://linktr.ee/Rev24" target="_blank" rel="noopener noreferrer">Contact Founder</a>
+            </Button>
+        </div>
+    );
 };
 
 export default Founder;
