@@ -1,13 +1,21 @@
-import { Button } from 'your-button-library';
+import { Button } from '@/components/ui/button';
+import { motion } from 'framer-motion';
+import Badge from '@/components/ui/Badge';
+import Section from '@/components/ui/Section';
+import Quote from '@/components/ui/Quote';
 
 const Founder = () => {
     return (
-        <div>
-            <h1>Meet Our Founder</h1>
-            <Button asChild>
-                <a href="https://linktr.ee/Rev24" target="_blank" rel="noopener noreferrer">Contact Founder</a>
-            </Button>
-        </div>
+        <Section>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+                <Badge>Founder</Badge>
+                <h1>Welcome to our organization!</h1>
+                <Quote text="Innovate. Inspire. Impact." />
+                <Button onClick={() => window.location.href='https://linktr.ee/Rev24'}>
+                    Contact Founder
+                </Button>
+            </motion.div>
+        </Section>
     );
 };
 
