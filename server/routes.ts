@@ -44,12 +44,17 @@ export async function registerRoutes(
       const user = await storage.createUser(input);
       
       // Also add them to the leaderboard with initial stats!
-      await storage.createLeaderboardEntry({
-        name: user.name,
-        xp: 0,
-        level: 1,
-        avatar: null
-      });
+      // Non-critical: don't fail registration if leaderboard entry creation fails
+      try {
+        await storage.createLeaderboardEntry({
+          name: user.name,
+          xp: 0,
+          level: 1,
+          avatar: null
+        });
+      } catch (leaderboardErr) {
+        console.error("Failed to create leaderboard entry for new user:", leaderboardErr);
+      }
 
       res.status(201).json(user);
     } catch (err) {
@@ -77,7 +82,11 @@ export async function registerRoutes(
   });
 
   // Seed data on startup
-  await storage.seedLeaderboard();
+  try {
+    await storage.seedLeaderboard();
+  } catch (err) {
+    console.error("Failed to seed leaderboard on startup:", err);
+  }
 
   return httpServer;
 }
