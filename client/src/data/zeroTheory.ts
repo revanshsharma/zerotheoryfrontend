@@ -11,8 +11,8 @@ export const siteContent = {
 };
 
 // PROMPTWARS × ZEROTHEORY. Paste the registration link into `registerUrl` when
-// it is ready: the button switches from "coming soon" to a live "Register now"
-// link on its own. Leave it as "" until then.
+// it is ready: the "Register for the hackathon" button drops its "link coming
+// soon" tag and starts opening that link on its own. Leave it as "" until then.
 export const promptWars = {
   registerUrl: "",
   steps: [

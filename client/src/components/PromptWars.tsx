@@ -1,7 +1,7 @@
 import { motion, useInView, useReducedMotion, type Variants } from "framer-motion";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { promptWars, siteContent } from "@/data/zeroTheory";
+import { promptWars } from "@/data/zeroTheory";
 
 const reveal = { hidden: { opacity: 0, y: 28 }, show: { opacity: 1, y: 0, transition: { duration: 0.65, ease: "easeOut" } } } satisfies Variants;
 
@@ -13,6 +13,14 @@ const GRADIENT = "bg-[linear-gradient(90deg,#fcea10_0%,#ff9a3c_45%,#e6007e_100%)
 const BINARY_ROWS = Array.from({ length: 16 }, (_, row) =>
   Array.from({ length: 120 }, (_, col) => ((row * 7 + col * 13 + ((row * col) % 5)) % 3 === 0 ? "1" : "0")).join(" ")
 );
+
+// The registration button. Same look whether it is live or still waiting for
+// its link, so nothing shifts when the link arrives. The typography sits on an
+// inner span because index.css resets `button { font: inherit }` and
+// `a { color: inherit }` outside any layer, which beats Tailwind's font and
+// colour utilities on the button or link itself.
+const CTA_BASE = `focus-ring inline-flex items-center ${GRADIENT} shadow-[4px_4px_0_#000] transition-transform`;
+const CTA_LABEL = "whitespace-nowrap text-xs font-bold uppercase tracking-[0.12em] text-[#1d1d1b]";
 
 const BADGE_TEXT = "PROMPT · BUILD · SHOW · PROMPT · BUILD · SHOW · ";
 
@@ -173,40 +181,43 @@ export function PromptWars() {
               ))}
             </ol>
 
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            {/* One button, built in its final shape. While registerUrl is empty it
+                is disabled and says the link is on its way; once the link is set
+                the same button goes live and opens the registration page. */}
+            <div className="mt-10">
               {hasLink ? (
                 <a
                   href={promptWars.registerUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`focus-ring group inline-flex items-center gap-4 rounded-full ${GRADIENT} px-6 py-3.5 text-xs font-bold uppercase tracking-[0.12em] text-[#1d1d1b] shadow-[4px_4px_0_#000] transition-transform active:scale-[0.97]`}
+                  className={`${CTA_BASE} group gap-4 rounded-full py-2.5 pl-6 pr-2.5 active:scale-[0.97]`}
                 >
-                  Register now
-                  <span className="grid h-7 w-7 place-items-center rounded-full bg-[#1d1d1b] text-[#fcea10] transition-transform duration-200 group-hover:rotate-45">
-                    <ArrowUpRight size={14} strokeWidth={2.5} />
+                  <span className={CTA_LABEL}>Register for the hackathon</span>
+                  <span className="grid h-8 w-8 place-items-center rounded-full bg-[#1d1d1b] text-[#fcea10] transition-transform duration-200 group-hover:rotate-45">
+                    <ArrowUpRight size={15} strokeWidth={2.5} />
                   </span>
                 </a>
               ) : (
-                <span
-                  role="status"
-                  className="inline-flex items-center gap-3 rounded-full border border-dashed border-white/35 px-6 py-3.5 text-xs font-bold uppercase tracking-[0.12em] text-white/80"
+                <button
+                  type="button"
+                  disabled
+                  aria-describedby="pw-register-note"
+                  className={`${CTA_BASE} w-full cursor-not-allowed flex-col gap-3 rounded-[1.75rem] px-6 py-4 sm:w-auto sm:flex-row sm:gap-4 sm:rounded-full sm:py-2.5 sm:pl-6 sm:pr-2.5`}
                 >
-                  <span className="relative flex h-2.5 w-2.5">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#fcea10] opacity-60" />
-                    <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#fcea10]" />
+                  <span className={CTA_LABEL}>Register for the hackathon</span>
+                  <span className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-[#1d1d1b] px-3 py-1.5 font-['DM_Mono',monospace] text-[10px] font-medium uppercase tracking-[0.1em] text-[#fcea10]">
+                    <span className="relative flex h-2 w-2">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#fcea10] opacity-60" />
+                      <span className="relative inline-flex h-2 w-2 rounded-full bg-[#fcea10]" />
+                    </span>
+                    Link coming soon
                   </span>
-                  Registration link coming soon
-                </span>
+                </button>
               )}
               {!hasLink && (
-                <a
-                  href={siteContent.joinUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="focus-ring inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-[#fcea10] underline-offset-4 hover:underline"
-                >
-                  Get it first on WhatsApp <ArrowUpRight size={14} />
-                </a>
+                <p id="pw-register-note" className="mono mt-4 text-[9px] text-white/45">
+                  Registration opens soon. The link will appear right here.
+                </p>
               )}
             </div>
           </motion.div>
