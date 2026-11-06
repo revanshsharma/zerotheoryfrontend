@@ -11,8 +11,8 @@ export const siteContent = {
 };
 
 // PROMPTWARS × ZEROTHEORY. Paste the registration link into `registerUrl` when
-// it is ready: the button switches from "coming soon" to a live "Register now"
-// link on its own. Leave it as "" until then.
+// it is ready: the "Register for the hackathon" button drops its "link coming
+// soon" tag and starts opening that link on its own. Leave it as "" until then.
 export const promptWars = {
   registerUrl: "",
   steps: [
@@ -155,9 +155,11 @@ export const contactLinks = [
 
 export const platformFeatures = ["GAMIFIED LEARNING", "CHALLENGES", "PROJECTS", "ACHIEVEMENTS", "PROGRESSION"];
 
+// Partner cards in the Built Together section. Each card links to `url` and
+// shows its domain underneath; `note` is an optional word in front of it.
 export const partners = [
-  { name: "GOOGLE" },
-  { name: "MICROSOFT" },
-  { name: "AMD" },
-  { name: "MUMBAI ONCHAIN WEEK" },
+  { name: "HACK2SKILL", url: "https://hack2skill.com/" },
+  { name: "MOUNT LITERA ZEE SCHOOL", note: "Jabalpur", url: "https://mountliterajabalpur.com/" },
+  { name: "GOOGLE FOR DEVELOPERS", url: "https://developers.google.com/" },
+  { name: "MUMBAI ONCHAIN WEEK", url: "https://www.mumbaionchain.site/" },
 ];
