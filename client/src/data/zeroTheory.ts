@@ -10,6 +10,25 @@ export const siteContent = {
   joinUrl: "https://chat.whatsapp.com/GizlmYwizaNBAQxTvV942Z", // WhatsApp community invite used by the Join button
 };
 
+// PROMPTWARS × ZEROTHEORY. Paste the registration link into `registerUrl` when
+// it is ready: the button switches from "coming soon" to a live "Register now"
+// link on its own. Leave it as "" until then.
+export const promptWars = {
+  registerUrl: "",
+  steps: [
+    { index: "01", title: "Prompt it", body: "Start from an idea, not a blank editor." },
+    { index: "02", title: "Build it", body: "Shape it with AI until it actually works." },
+    { index: "03", title: "Show it", body: "Share what you built and the prompts behind it." },
+  ],
+  // Typed out, one after another, in the terminal on the right of the section.
+  prompts: [
+    "build me a study planner that roasts me when I skip a day",
+    "turn my class notes into a quiz game",
+    "make a bot that explains code like a friend would",
+    "design a poster for our next meetup",
+  ],
+};
+
 // EDIT IMPACT NUMBERS HERE — `value` is what shows (add "+" for "or more"), `numeric` drives the count-up animation, `note` is optional.
 export const impactStats = [
   { value: "700+", numeric: 700, label: "Students mentored", note: "Worldwide" },
