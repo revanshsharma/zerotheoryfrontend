@@ -156,8 +156,14 @@ export const contactLinks = [
 export const platformFeatures = ["GAMIFIED LEARNING", "CHALLENGES", "PROJECTS", "ACHIEVEMENTS", "PROGRESSION"];
 
 export const partners = [
-  { name: "GOOGLE" },
-  { name: "MICROSOFT" },
-  { name: "AMD" },
+  { name: "Google For Developers" },
+  {
+    name: "Mount Litera Zee School Jabalpur",
+    link: "https://mountliterajabalpur.com/"
+  },
+  {
+    name: "Hack2skill",
+    link: "https://hack2skill.com/"
+  },
   { name: "MUMBAI ONCHAIN WEEK" },
 ];
