@@ -159,11 +159,11 @@ export const partners = [
   { name: "Google For Developers" },
   {
     name: "Mount Litera Zee School Jabalpur",
-    link: "https://mountliterajabalpur.com/"
+    href: "https://mountliterajabalpur.com/"
   },
   {
     name: "Hack2skill",
-    link: "https://hack2skill.com/"
+    href: "https://hack2skill.com/"
   },
   { name: "MUMBAI ONCHAIN WEEK" },
 ];
