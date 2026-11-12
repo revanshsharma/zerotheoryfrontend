@@ -99,14 +99,14 @@ export function Landing() {
         </div>
       )}
 
-      <header className="absolute inset-x-0 top-0 z-10 flex items-center justify-between gap-3 px-4 py-3 md:px-8">
+      <header className="absolute inset-x-0 top-0 z-10 flex flex-col items-start gap-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-3 md:px-8">
         <span className="flex items-center gap-4">
-          <WouterLink href="/" className="text-xs uppercase tracking-widest text-cream-dim hover:text-neon" aria-label="Back to the ZeroTheory home page">
+          <WouterLink href="/" className="whitespace-nowrap text-xs uppercase tracking-widest text-cream-dim hover:text-neon" aria-label="Back to the ZeroTheory home page">
             &larr; ZeroTheory
           </WouterLink>
           <span className="font-pixel text-lg text-offwhite hidden sm:inline">CHANNEL <span className="text-neon">GREEN</span></span>
         </span>
-        <nav aria-label="Channel Green" className="flex flex-wrap items-center justify-end gap-x-4 gap-y-1 text-sm text-offwhite">
+        <nav aria-label="Channel Green" className="flex flex-wrap items-center justify-start gap-x-4 gap-y-1 text-sm text-offwhite sm:justify-end">
           <a href="#about" className="hover:text-neon">About</a>
           <a href="#rooms" className="hover:text-neon">Rooms</a>
           <a href="#contribute" className="hover:text-neon">Contribute</a>
