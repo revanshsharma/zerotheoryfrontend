@@ -1,0 +1,27 @@
+[
+  {
+    "id": "trousers",
+    "name": "Trousers",
+    "slot": "bottom",
+    "coverage": 1
+  },
+  {
+    "id": "shorts",
+    "name": "Shorts",
+    "slot": "bottom",
+    "coverage": 0.4
+  },
+  {
+    "id": "cropped",
+    "name": "Cropped trousers",
+    "slot": "bottom",
+    "coverage": 0.7
+  },
+  {
+    "id": "skirt",
+    "name": "Skirt",
+    "slot": "bottom",
+    "coverage": 0.2,
+    "flare": true
+  }
+]

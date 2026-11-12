@@ -1,0 +1,52 @@
+{
+  "id": "listening-room",
+  "name": "Listening Room",
+  "blurb": "Everyone hears the same tape at the same moment. Sit down and let it play.",
+  "category": "signature",
+  "tiles": {
+    "legend": {"P": "planks-dark", "W": "wood-wall"},
+    "rows": ["WWWWWWWWWWWWWWWWWWWWWW", "WWWWWWWWWWWWWWWWWWWWWW", "WPPPPPPPPPPPPPPPPPPPPW", "WPPPPPPPPPPPPPPPPPPPPW", "WPPPPPPPPPPPPPPPPPPPPW", "WPPPPPPPPPPPPPPPPPPPPW", "WPPPPPPPPPPPPPPPPPPPPW", "WPPPPPPPPPPPPPPPPPPPPW", "WPPPPPPPPPPPPPPPPPPPPW", "WPPPPPPPPPPPPPPPPPPPPW", "WPPPPPPPPPPPPPPPPPPPPW", "WPPPPPPPPPPPPPPPPPPPPW", "WPPPPPPPPPPPPPPPPPPPPW", "WPPPPPPPPPPPPPPPPPPPPW", "WPPPPPPPPPPPPPPPPPPPPW", "WWWWWWWWWWPPWWWWWWWWWW"]
+  },
+  "objects": [
+    {"furniture": "shelf-tapes", "at": [48, 34]},
+    {"furniture": "shelf-tapes", "at": [256, 34]},
+    {"furniture": "speaker", "at": [122, 50]},
+    {"furniture": "speaker", "at": [218, 50]},
+    {"furniture": "record-player", "at": [168, 62]},
+    {"furniture": "rug-orange", "at": [128, 144]},
+    {"furniture": "cushions", "at": [112, 146]},
+    {"furniture": "cushions", "at": [176, 146]},
+    {"furniture": "beanbag", "at": [64, 124]},
+    {"furniture": "beanbag", "at": [272, 124]},
+    {"furniture": "candle", "at": [100, 190]},
+    {"furniture": "candle", "at": [244, 190]},
+    {"furniture": "candle", "at": [160, 126]},
+    {"furniture": "string-lights", "at": [32, 42]},
+    {"furniture": "string-lights", "at": [192, 42]},
+    {"furniture": "plant", "at": [16, 206]},
+    {"furniture": "plant", "at": [320, 206]},
+    {"furniture": "floor-lamp", "at": [16, 96]},
+    {"furniture": "floor-lamp", "at": [320, 96]},
+    {"furniture": "exit-mat", "at": [160, 224]}
+  ],
+  "portals": [
+    {
+      "id": "exit",
+      "label": "Town Square",
+      "rect": [10, 15, 2, 1],
+      "to": "town-square",
+      "spawn": "from-listening"
+    }
+  ],
+  "spawns": {"door": [11, 13]},
+  "features": ["listen"],
+  "capacity": 24,
+  "allowPrivate": true,
+  "voice": "room",
+  "ambience": "listening-warm",
+  "tint": {"color": "#6a2a08", "alpha": 0.28},
+  "background": "#120a06",
+  "effects": [
+    {"type": "dust", "count": 16, "color": "#ffd9a0"}
+  ]
+}

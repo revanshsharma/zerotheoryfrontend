@@ -1,0 +1,402 @@
+.cg-root .pixelated,
+.cg-root canvas.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.cg-root .font-pixel {
+  font-family: var(--font-pixel);
+}
+
+/* chunky panel with a stepped pixel border */
+.cg-root .panel {
+  background: var(--color-forest);
+  border: 2px solid var(--color-moss);
+  box-shadow: 0 0 0 2px var(--color-forest-deep), 4px 4px 0 0 rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+}
+
+.cg-root .btn {
+  font-family: var(--font-pixel);
+  background: var(--color-moss);
+  color: var(--color-offwhite);
+  border: 2px solid var(--color-olive);
+  padding: 0.35rem 0.8rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.08s, background 0.12s;
+  line-height: 1.2;
+}
+.cg-root .btn:hover:not(:disabled) {
+  background: var(--color-olive);
+  color: var(--color-forest-deep);
+}
+.cg-root .btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+.cg-root .btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.cg-root .btn-primary {
+  background: var(--color-neon);
+  color: var(--color-forest-deep);
+  border-color: var(--color-offwhite);
+}
+.cg-root .btn-primary:hover:not(:disabled) {
+  background: var(--color-offwhite);
+}
+.cg-root .btn-warm {
+  background: var(--color-orange);
+  color: var(--color-ink);
+  border-color: var(--color-cream);
+}
+.cg-root .btn-warm:hover:not(:disabled) {
+  background: var(--color-cream);
+}
+.cg-root .btn-quiet {
+  background: transparent;
+  border-color: var(--color-moss);
+}
+.cg-root .btn-sm {
+  padding: 0.2rem 0.55rem;
+  font-size: 0.85rem;
+}
+
+.cg-root .field {
+  background: var(--color-forest-deep);
+  color: var(--color-offwhite);
+  border: 2px solid var(--color-moss);
+  border-radius: 3px;
+  padding: 0.4rem 0.6rem;
+  width: 100%;
+  outline: none;
+}
+.cg-root .field:focus {
+  border-color: var(--color-neon);
+}
+
+.cg-root :focus-visible {
+  outline: 2px solid var(--color-neon);
+  outline-offset: 2px;
+}
+
+@keyframes drift {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.cg-root .rise {
+  animation: rise 0.6s ease-out both;
+}
+.cg-root .blink {
+  animation: blink 1.6s steps(2, jump-none) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cg-root *,
+.cg-root *::before,
+.cg-root *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.cg-root .prose-cg p {
+  margin: 0 0 0.9rem;
+  line-height: 1.65;
+  color: var(--color-cream);
+}
+.cg-root .prose-cg h2 {
+  font-family: var(--font-pixel);
+  font-size: 1.5rem;
+  margin: 2rem 0 0.7rem;
+  color: var(--color-neon);
+}
+.cg-root .prose-cg ul {
+  margin: 0 0 1rem 1.2rem;
+  list-style: square;
+  color: var(--color-cream);
+}
+.cg-root .prose-cg li {
+  margin-bottom: 0.4rem;
+  line-height: 1.55;
+}
+.cg-root .prose-cg a {
+  color: var(--color-orange);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ------------------------------------------------------------------ mood: dusk haze over the world */
+.cg-root .mood {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  overflow: hidden;
+  animation: mood-in 1.6s ease-out both;
+}
+.cg-root .mood-wash {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, var(--mood-top), transparent 42%, transparent 62%, var(--mood-bottom));
+}
+.cg-root .mood-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 46%, transparent 52%, rgba(10, 8, 6, calc(var(--mood-vignette) * 0.7)) 100%);
+}
+.cg-root .mood-grain {
+  position: absolute;
+  inset: -64px;
+  opacity: calc(var(--mood-grain) * 0.05);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 0.93  0 0 0 0 0.8  0 0 0 1.1 -0.2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  animation: grain 0.9s steps(1) infinite;
+}
+@keyframes mood-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes grain {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-23px, 17px); }
+  40% { transform: translate(31px, -12px); }
+  60% { transform: translate(-14px, -29px); }
+  80% { transform: translate(22px, 26px); }
+}
+
+/* ------------------------------------------------------------------ landing: sunset, cream and pool water */
+.cg-root .sunset-wash {
+  background:
+    radial-gradient(ellipse 90% 60% at 50% 105%, rgba(255, 140, 70, 0.5), transparent 70%),
+    linear-gradient(to bottom, rgba(70, 42, 96, 0.25) 0%, rgba(214, 110, 70, 0.14) 45%, rgba(255, 170, 100, 0.22) 75%, rgba(11, 31, 21, 0.9) 100%);
+}
+.cg-root .film-grain {
+  position: absolute;
+  inset: -64px;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 0.93  0 0 0 0 0.8  0 0 0 1.1 -0.2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  animation: grain 0.9s steps(1) infinite;
+}
+.cg-root .cream-section {
+  background: var(--color-offwhite);
+  color: var(--color-charcoal);
+}
+.cg-root .cream-section .quiet-line {
+  font-family: var(--cg-sans);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.12;
+}
+.cg-root .eyebrow {
+  font-family: var(--cg-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  font-size: 0.72rem;
+}
+.cg-root .pool {
+  position: relative;
+  height: 96px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, var(--color-offwhite), #bfe3d4 40%, #4f9e92 78%, var(--color-forest) 100%);
+}
+.cg-root .pool::before,
+.cg-root .pool::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 60px 8px at 20% 30%, rgba(255, 255, 255, 0.55), transparent 70%),
+    radial-gradient(ellipse 90px 10px at 65% 55%, rgba(255, 255, 255, 0.4), transparent 70%),
+    radial-gradient(ellipse 50px 7px at 85% 25%, rgba(255, 255, 255, 0.5), transparent 70%),
+    radial-gradient(ellipse 70px 9px at 40% 75%, rgba(255, 240, 200, 0.35), transparent 70%);
+  background-size: 400px 100%;
+  animation: shimmer 14s linear infinite;
+}
+.cg-root .pool::after {
+  background-size: 290px 100%;
+  animation-duration: 21s;
+  animation-direction: reverse;
+  opacity: 0.7;
+}
+@keyframes shimmer {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 400px;
+  }
+}
+.cg-root .text-cream-dim {
+  color: #d9ccaa;
+}
+
+/* ------------------------------------------------------------------ touch controls and small screens */
+.cg-root .touch-ui {
+  display: none;
+}
+@media (hover: none) and (pointer: coarse) {
+  .cg-root .touch-ui {
+    display: flex;
+  }
+}
+.cg-root .touch-pad {
+  width: 3.4rem;
+  height: 3.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(20, 48, 31, 0.72);
+  border: 2px solid rgba(241, 227, 193, 0.5);
+  color: var(--color-offwhite);
+  font-size: 1.15rem;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.cg-root .touch-pad:active,
+.cg-root .touch-pad[data-down='true'] {
+  background: rgba(232, 149, 90, 0.85);
+  color: var(--color-ink);
+}
+.cg-root .emote-bar {
+  max-width: 100%;
+}
+@media (max-width: 640px) {
+  .cg-root .emote-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: calc(100vw - 1rem);
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+}
+
+/* readable focus everywhere, including on dark panels and cream sections */
+.cg-root .btn:focus-visible,
+.cg-root .touch-pad:focus-visible,
+.cg-root .field:focus-visible,
+.cg-root a:focus-visible,
+.cg-root button:focus-visible {
+  outline: 3px solid var(--color-neon);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px rgba(11, 31, 21, 0.9);
+}
+.cg-root .cream-section a:focus-visible,
+.cg-root .cream-section button:focus-visible {
+  outline-color: var(--color-forest);
+  box-shadow: 0 0 0 5px rgba(250, 245, 232, 0.9);
+}
+.cg-root .skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.5rem 0.9rem;
+  background: var(--color-offwhite);
+  color: var(--color-forest-deep);
+  border-radius: 3px;
+}
+.cg-root .skip-link:focus {
+  top: 0.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cg-root .mood-grain,
+.cg-root .film-grain {
+    animation: none !important;
+  }
+  .cg-root .pool::before,
+.cg-root .pool::after {
+    animation: none !important;
+  }
+  .cg-root .mood {
+    animation: none !important;
+  }
+}
+
+/* global safety net for people who ask for less motion */
+@media (prefers-reduced-motion: reduce) {
+  .cg-root *,
+.cg-root *::before,
+.cg-root *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.cg-root .cream-section p.quiet-line {
+  line-height: 1.5;
+}
+.cg-root .cream-section h3 {
+  color: #9a4a26;
+}
+
+/* signature quote: a quiet typographic moment at the end of the cream section */
+.cg-root .signature-quote {
+  margin: 5rem 0 0;
+  text-align: center;
+}
+.cg-root .signature-quote-text {
+  margin: 1rem auto 0;
+  max-width: 100%;
+  font-size: clamp(2.25rem, 11vw, 5.5rem);
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  color: var(--color-orange-deep);
+  overflow-wrap: anywhere;
+  opacity: 0;
+  animation: quote-rise 1.4s ease-out 0.2s forwards;
+}
+@keyframes quote-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cg-root .signature-quote-text {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+}
+

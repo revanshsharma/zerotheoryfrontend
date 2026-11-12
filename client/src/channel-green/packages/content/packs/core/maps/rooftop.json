@@ -1,0 +1,52 @@
+{
+  "id": "rooftop",
+  "name": "Rooftop",
+  "blurb": "Stars, a quiet fire, and a city that sounds far away.",
+  "category": "signature",
+  "features": [],
+  "capacity": 30,
+  "allowPrivate": true,
+  "voice": "proximity",
+  "ambience": "night-roof",
+  "tint": {"color": "#0a1440", "alpha": 0.3},
+  "background": "#050b1e",
+  "tiles": {
+    "legend": {"r": "rooftop-floor", "x": "night-sky", "o": "parapet"},
+    "rows": ["xxxxxxxxxxxxxxxxxxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxxxxx", "xoooooooooooooooooooooooooox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "xorrrrrrrrrrrrrrrrrrrrrrrrox", "ooorrooooooooooooooooooooooo"]
+  },
+  "objects": [
+    {"furniture": "ladder-hatch", "at": [48, 252]},
+    {"furniture": "water-tank", "at": [336, 64]},
+    {"furniture": "antenna", "at": [64, 72]},
+    {"furniture": "antenna", "at": [400, 152]},
+    {"furniture": "telescope", "at": [192, 72]},
+    {"furniture": "deck-chair", "at": [128, 146]},
+    {"furniture": "deck-chair", "at": [256, 146]},
+    {"furniture": "deck-chair", "at": [192, 178]},
+    {"furniture": "fire-pit", "at": [204, 128]},
+    {"furniture": "string-lights", "at": [96, 70]},
+    {"furniture": "string-lights", "at": [224, 70]},
+    {"furniture": "string-lights", "at": [352, 70]},
+    {"furniture": "plant", "at": [32, 78]},
+    {"furniture": "plant", "at": [400, 222]},
+    {"furniture": "crate", "at": [384, 156]},
+    {"furniture": "cushions", "at": [288, 238]},
+    {"furniture": "cushions", "at": [96, 222]},
+    {"furniture": "candle", "at": [282, 218]},
+    {"furniture": "bench", "at": [32, 220]}
+  ],
+  "portals": [
+    {
+      "id": "exit",
+      "label": "Back down",
+      "rect": [3, 17, 2, 1],
+      "to": "town-square",
+      "spawn": "from-roof"
+    }
+  ],
+  "spawns": {"hatch": [4, 15]},
+  "effects": [
+    {"type": "stars", "count": 90, "color": "#f1e3c1"},
+    {"type": "dust", "count": 6}
+  ]
+}

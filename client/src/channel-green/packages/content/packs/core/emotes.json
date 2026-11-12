@@ -1,0 +1,10 @@
+[
+  {"id": "wave", "label": "Wave", "glyph": "👋"},
+  {"id": "heart", "label": "Heart", "glyph": "💚"},
+  {"id": "laugh", "label": "Laugh", "glyph": "😂"},
+  {"id": "sleepy", "label": "Sleepy", "glyph": "😴"},
+  {"id": "sparkle", "label": "Sparkle", "glyph": "✨"},
+  {"id": "music", "label": "Music", "glyph": "🎵"},
+  {"id": "think", "label": "Thinking", "glyph": "💭"},
+  {"id": "clap", "label": "Clap", "glyph": "👏"}
+]

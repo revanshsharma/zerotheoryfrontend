@@ -1,0 +1,52 @@
+{
+  "id": "tv-lounge",
+  "name": "TV Lounge",
+  "blurb": "Dim lights, one big screen, and a room full of people who all pressed play together.",
+  "category": "social",
+  "tiles": {
+    "legend": {"c": "carpet-green", "n": "wallpaper-dark"},
+    "rows": ["nnnnnnnnnnnnnnnnnnnnnnnnnn", "nnnnnnnnnnnnnnnnnnnnnnnnnn", "nccccccccccccccccccccccccn", "nccccccccccccccccccccccccn", "nccccccccccccccccccccccccn", "nccccccccccccccccccccccccn", "nccccccccccccccccccccccccn", "nccccccccccccccccccccccccn", "nccccccccccccccccccccccccn", "nccccccccccccccccccccccccn", "nccccccccccccccccccccccccn", "nccccccccccccccccccccccccn", "nccccccccccccccccccccccccn", "nccccccccccccccccccccccccn", "nccccccccccccccccccccccccn", "nnnnnnnnnnnnccnnnnnnnnnnnn"]
+  },
+  "objects": [
+    {"furniture": "tv", "at": [184, 32]},
+    {"furniture": "string-lights", "at": [16, 42]},
+    {"furniture": "string-lights", "at": [272, 42]},
+    {"furniture": "sofa", "at": [112, 134]},
+    {"furniture": "sofa", "at": [240, 134]},
+    {"furniture": "sofa", "at": [112, 184]},
+    {"furniture": "sofa", "at": [240, 184]},
+    {"furniture": "beanbag", "at": [48, 124]},
+    {"furniture": "beanbag", "at": [48, 172]},
+    {"furniture": "beanbag", "at": [352, 124]},
+    {"furniture": "beanbag", "at": [352, 172]},
+    {"furniture": "cushions", "at": [176, 126]},
+    {"furniture": "coffee-table", "at": [176, 170]},
+    {"furniture": "speaker", "at": [64, 66]},
+    {"furniture": "speaker", "at": [336, 66]},
+    {"furniture": "plant", "at": [16, 206]},
+    {"furniture": "plant", "at": [384, 206]},
+    {"furniture": "floor-lamp", "at": [16, 48]},
+    {"furniture": "floor-lamp", "at": [384, 48]},
+    {"furniture": "exit-mat", "at": [192, 224]}
+  ],
+  "portals": [
+    {
+      "id": "exit",
+      "label": "Town Square",
+      "rect": [12, 15, 2, 1],
+      "to": "town-square",
+      "spawn": "from-tv"
+    }
+  ],
+  "spawns": {"door": [13, 13]},
+  "features": ["watch"],
+  "capacity": 24,
+  "allowPrivate": true,
+  "voice": "room",
+  "ambience": "tv-hum",
+  "tint": {"color": "#0a1230", "alpha": 0.34},
+  "background": "#070a14",
+  "effects": [
+    {"type": "dust", "count": 10, "color": "#8fb8ff"}
+  ]
+}

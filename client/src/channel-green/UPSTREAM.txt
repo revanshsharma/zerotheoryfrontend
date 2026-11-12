@@ -1,0 +1,13 @@
+Channel Green source commit: f84b4139d45214602e0ab466fcff7936f2858e67
+Ref given: f84b4139d45214602e0ab466fcff7936f2858e67
+Synced on: 2026-11-11T08:30:01Z
+
+Fingerprints of upstream files that this site ports by hand (see docs/channel-green-sync.md):
+bb1f71254abc80a13231a161c7131cfe619d5ad6a89c89d5e1bb0e07f8887c4b  apps/web/src/app/globals.css
+699c44599529027690a2a63648b907d595d9d089387fc1c52dd97fc466f3849e  apps/web/src/app/layout.tsx
+b4c37ded5bcf3b1225f57e4f75f4519ced19e83a021bca0714d69c5ecc38a64a  apps/web/src/app/page.tsx
+ad8706f2907be29e48ec6cf7c859b961e28b874cf169a2444d12007d7d7b747a  apps/web/src/app/play/page.tsx
+34f8b52e0450f0fa1e90b21a1d16953987976bec0f1f5a47a6e8cc9a6a63d7fe  apps/web/src/app/api/status/route.ts
+6460822c18950f097de8c41c20385e17287da97538dbe09d763d1e3287335375  apps/web/src/components/landing/Landing.tsx
+4e04edee832956b16404745f105ee7616cc0a34c7a02a22125909a8049cee1a4  apps/web/next.config.ts
+49c5a3376d92eaf0c3b696eac35ebe83c1ae3aeb87b2c167b38a44ee080f0c9f  apps/web/package.json

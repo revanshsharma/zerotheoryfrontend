@@ -9,6 +9,7 @@ dist/
 # environment files
 .env
 .env.*
+!.env.example
 
 # git bundles used to hand off commits
 *.bundle

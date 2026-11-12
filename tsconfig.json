@@ -6,6 +6,7 @@
     "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
     "noEmit": true,
     "module": "ESNext",
+    "target": "ES2020",
     "strict": true,
     "lib": ["esnext", "dom", "dom.iterable"],
     "jsx": "preserve",
@@ -15,9 +16,15 @@
     "moduleResolution": "bundler",
     "baseUrl": ".",
     "types": ["node", "vite/client"],
+    "resolveJsonModule": true,
     "paths": {
       "@/*": ["./client/src/*"],
-      "@shared/*": ["./shared/*"]
+      "@shared/*": ["./shared/*"],
+      "@cg/*": ["./client/src/channel-green/web/*"],
+      "@channel-green/shared": ["./client/src/channel-green/packages/shared/src/index.ts"],
+      "@channel-green/content": ["./client/src/channel-green/packages/content/src/index.ts"],
+      "next/link": ["./client/src/channel-green-site/shims/next-link.tsx"],
+      "next/navigation": ["./client/src/channel-green-site/shims/next-navigation.ts"]
     }
   }
 }

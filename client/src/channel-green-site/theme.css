@@ -1,0 +1,36 @@
+/* Channel Green colours and fonts, available to Tailwind (bg-forest-deep, text-neon, font-pixel ...).
+   Every name is new, so nothing the rest of the site uses is changed. The Channel Green rules that
+   use them are in channel-green/web/globals.scoped.css and only apply inside .cg-root. */
+@theme {
+  --color-forest-deep: #0b1f15;
+  --color-forest: #14301f;
+  --color-moss: #264a30;
+  --color-olive: #6f7d3c;
+  --color-olive-soft: #97a35d;
+  --color-cream: #f1e3c1;
+  --color-offwhite: #faf5e8;
+  --color-orange: #e8955a;
+  --color-orange-deep: #c9683a;
+  --color-charcoal: #2a2c28;
+  --color-charcoal-soft: #43463f;
+  --color-neon: #9dff6a;
+  --color-ink: #2a1d1a;
+  --font-pixel: 'Pixelify Sans', 'Jost', system-ui, sans-serif;
+}
+
+/* The section's own page: dusk-green ground and Jost, only inside the section. */
+.cg-root {
+  --cg-sans: 'Jost', system-ui, sans-serif;
+  background: var(--color-forest-deep);
+  color: var(--color-offwhite);
+  font-family: var(--cg-sans);
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+}
+/* The rest of the site resets links and buttons without a layer, which would beat Tailwind's classes.
+   Inside the section we hand control back to the layers Channel Green was written for. */
+.cg-root a { color: revert-layer; text-decoration: revert-layer; }
+.cg-root button { font: revert-layer; }
+.cg-root * { scrollbar-width: thin; scrollbar-color: var(--color-moss) transparent; }
+/* Overscroll / page ground while the section is open */
+html:has(.cg-root), body:has(.cg-root) { background: var(--color-forest-deep); }

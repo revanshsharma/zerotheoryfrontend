@@ -1,0 +1,171 @@
+[
+  {
+    "id": "grass",
+    "name": "Grass",
+    "base": "#2f5a36",
+    "pattern": "grass",
+    "colors": ["#274d2f", "#3f7344", "#4d8550"],
+    "density": 0.1
+  },
+  {
+    "id": "grass-dark",
+    "name": "Dark grass",
+    "base": "#25492d",
+    "pattern": "grass",
+    "colors": ["#1d3a24", "#2f5a36", "#3b6b41"],
+    "density": 0.12
+  },
+  {
+    "id": "cobble",
+    "name": "Cobblestone",
+    "base": "#8b8068",
+    "pattern": "cobble",
+    "colors": ["#5f5744", "#a49878"]
+  },
+  {
+    "id": "stone-path",
+    "name": "Stone path",
+    "base": "#9a9078",
+    "pattern": "tiles",
+    "colors": ["#6f6652", "#b3a98c"]
+  },
+  {
+    "id": "hedge-tile",
+    "name": "Hedge",
+    "base": "#173d24",
+    "pattern": "speckle",
+    "colors": ["#0f2a18", "#2c6a3a", "#3e8450"],
+    "solid": true,
+    "density": 0.28
+  },
+  {
+    "id": "brick",
+    "name": "Brick wall",
+    "base": "#9a5a46",
+    "pattern": "brick",
+    "colors": ["#6e3b2e", "#b8735a"],
+    "solid": true
+  },
+  {
+    "id": "roof-tile",
+    "name": "Roof tiles",
+    "base": "#4a5a3a",
+    "pattern": "roof",
+    "colors": ["#2f3a26", "#677a4f"],
+    "solid": true
+  },
+  {
+    "id": "planks",
+    "name": "Wooden floor",
+    "base": "#a9794a",
+    "pattern": "planks",
+    "colors": ["#7d5632", "#c08f5c"]
+  },
+  {
+    "id": "planks-dark",
+    "name": "Dark wooden floor",
+    "base": "#6f4a2e",
+    "pattern": "planks",
+    "colors": ["#4a301d", "#87603e"]
+  },
+  {
+    "id": "wood-wall",
+    "name": "Wood panelling",
+    "base": "#3d2630",
+    "pattern": "planks",
+    "colors": ["#281820", "#523540"],
+    "solid": true
+  },
+  {
+    "id": "checker-floor",
+    "name": "Checkered floor",
+    "base": "#e8dcc0",
+    "pattern": "checker",
+    "colors": ["#3f6b47"]
+  },
+  {
+    "id": "carpet-green",
+    "name": "Green carpet",
+    "base": "#2d5a3c",
+    "pattern": "carpet",
+    "colors": ["#244a31", "#3a7049"]
+  },
+  {
+    "id": "concrete",
+    "name": "Concrete",
+    "base": "#6c6f68",
+    "pattern": "speckle",
+    "colors": ["#5a5d56", "#7d8078"],
+    "density": 0.14
+  },
+  {
+    "id": "wallpaper-green",
+    "name": "Green wallpaper",
+    "base": "#5d7a4a",
+    "pattern": "wallpaper",
+    "colors": ["#3e5733", "#6f8d59"],
+    "solid": true
+  },
+  {
+    "id": "wallpaper-cream",
+    "name": "Cream wallpaper",
+    "base": "#d8c79d",
+    "pattern": "wallpaper",
+    "colors": ["#a8956a", "#e5d7b2"],
+    "solid": true
+  },
+  {
+    "id": "wallpaper-dark",
+    "name": "Dark wallpaper",
+    "base": "#2b3a33",
+    "pattern": "wallpaper",
+    "colors": ["#1c2722", "#3a4d44"],
+    "solid": true
+  },
+  {
+    "id": "wallpaper-slate",
+    "name": "Slate wallpaper",
+    "base": "#4a5a66",
+    "pattern": "wallpaper",
+    "colors": ["#33414b", "#5d6f7c"],
+    "solid": true
+  },
+  {
+    "id": "alley-brick",
+    "name": "Alley brick",
+    "base": "#4c3a3c",
+    "pattern": "brick",
+    "colors": ["#322527", "#624b4d"],
+    "solid": true
+  },
+  {
+    "id": "soil",
+    "name": "Garden soil",
+    "base": "#5a3f2a",
+    "pattern": "soil",
+    "colors": ["#3f2a1a", "#74533a"]
+  },
+  {
+    "id": "rooftop-floor",
+    "name": "Rooftop floor",
+    "base": "#7b7c72",
+    "pattern": "tiles",
+    "colors": ["#5d5e56", "#92938a"]
+  },
+  {
+    "id": "night-sky",
+    "name": "Night sky",
+    "base": "#050b1e",
+    "pattern": "flat",
+    "colors": ["#050b1e"],
+    "solid": true
+  },
+  {
+    "id": "parapet",
+    "name": "Parapet",
+    "base": "#7b776a",
+    "pattern": "brick",
+    "colors": ["#57544a", "#96917f"],
+    "solid": true
+  }
+]

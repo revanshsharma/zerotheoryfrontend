@@ -1,0 +1,55 @@
+{
+  "id": "rain-room",
+  "name": "Rain Room",
+  "blurb": "It is always raining outside. In here you are dry, warm, and allowed to do nothing.",
+  "category": "signature",
+  "tiles": {
+    "legend": {"o": "concrete", "u": "wallpaper-slate"},
+    "rows": ["uuuuuuuuuuuuuuuuuuuuuu", "uuuuuuuuuuuuuuuuuuuuuu", "uoooooooooooooooooooou", "uoooooooooooooooooooou", "uoooooooooooooooooooou", "uoooooooooooooooooooou", "uoooooooooooooooooooou", "uoooooooooooooooooooou", "uoooooooooooooooooooou", "uoooooooooooooooooooou", "uoooooooooooooooooooou", "uoooooooooooooooooooou", "uoooooooooooooooooooou", "uoooooooooooooooooooou", "uoooooooooooooooooooou", "uuuuuuuuuuoouuuuuuuuuu"]
+  },
+  "objects": [
+    {"furniture": "window-rain", "at": [48, 24]},
+    {"furniture": "window-rain", "at": [128, 24]},
+    {"furniture": "window-rain", "at": [208, 24]},
+    {"furniture": "window-rain", "at": [288, 24]},
+    {"furniture": "rug-orange", "at": [128, 144]},
+    {"furniture": "cushions", "at": [112, 130]},
+    {"furniture": "cushions", "at": [176, 130]},
+    {"furniture": "beanbag", "at": [64, 156]},
+    {"furniture": "beanbag", "at": [272, 156]},
+    {"furniture": "sofa", "at": [128, 102]},
+    {"furniture": "umbrella-stand", "at": [32, 62]},
+    {"furniture": "umbrella-stand", "at": [304, 62]},
+    {"furniture": "puddle", "at": [48, 196]},
+    {"furniture": "puddle", "at": [224, 212]},
+    {"furniture": "puddle", "at": [272, 116]},
+    {"furniture": "candle", "at": [100, 174]},
+    {"furniture": "candle", "at": [224, 174]},
+    {"furniture": "plant", "at": [16, 206]},
+    {"furniture": "plant", "at": [320, 206]},
+    {"furniture": "kettle", "at": [176, 92]},
+    {"furniture": "exit-mat", "at": [160, 224]},
+    {"furniture": "floor-lamp", "at": [16, 96]},
+    {"furniture": "floor-lamp", "at": [320, 112]}
+  ],
+  "portals": [
+    {
+      "id": "exit",
+      "label": "Town Square",
+      "rect": [10, 15, 2, 1],
+      "to": "town-square",
+      "spawn": "from-rain"
+    }
+  ],
+  "spawns": {"door": [11, 13]},
+  "features": [],
+  "capacity": 20,
+  "allowPrivate": true,
+  "voice": "off",
+  "ambience": "rain-room",
+  "tint": {"color": "#0c1c34", "alpha": 0.4},
+  "background": "#070e18",
+  "effects": [
+    {"type": "rain", "count": 120, "color": "#9ec8e0"}
+  ]
+}

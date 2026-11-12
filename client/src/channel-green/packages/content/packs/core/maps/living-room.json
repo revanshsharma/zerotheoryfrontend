@@ -1,0 +1,56 @@
+{
+  "id": "living-room",
+  "name": "Living Room",
+  "blurb": "A house that is always open. Take your shoes off in your head.",
+  "category": "signature",
+  "tiles": {
+    "legend": {"p": "planks", "n": "wallpaper-cream"},
+    "rows": ["nnnnnnnnnnnnnnnnnnnnnnnn", "nnnnnnnnnnnnnnnnnnnnnnnn", "nppppppppppppppppppppppn", "nppppppppppppppppppppppn", "nppppppppppppppppppppppn", "nppppppppppppppppppppppn", "nppppppppppppppppppppppn", "nppppppppppppppppppppppn", "nppppppppppppppppppppppn", "nppppppppppppppppppppppn", "nppppppppppppppppppppppn", "nppppppppppppppppppppppn", "nppppppppppppppppppppppn", "nppppppppppppppppppppppn", "nppppppppppppppppppppppn", "nnnnnnnnnnnppnnnnnnnnnnn"]
+  },
+  "objects": [
+    {"furniture": "rug-green", "at": [112, 144]},
+    {"furniture": "window-night", "at": [48, 14]},
+    {"furniture": "window-night", "at": [176, 14]},
+    {"furniture": "window-night", "at": [304, 14]},
+    {"furniture": "bookshelf", "at": [96, 12]},
+    {"furniture": "bookshelf", "at": [240, 12]},
+    {"furniture": "picture", "at": [144, 38]},
+    {"furniture": "picture", "at": [208, 38]},
+    {"furniture": "sofa-up", "at": [128, 82]},
+    {"furniture": "sofa", "at": [128, 186]},
+    {"furniture": "armchair", "at": [80, 134]},
+    {"furniture": "armchair", "at": [240, 134]},
+    {"furniture": "coffee-table", "at": [160, 154]},
+    {"furniture": "candle", "at": [176, 152], "depth": 12},
+    {"furniture": "floor-lamp", "at": [32, 48]},
+    {"furniture": "floor-lamp", "at": [336, 48]},
+    {"furniture": "plant", "at": [16, 158]},
+    {"furniture": "plant", "at": [352, 158]},
+    {"furniture": "plant", "at": [352, 206]},
+    {"furniture": "kettle", "at": [304, 92]},
+    {"furniture": "beanbag", "at": [304, 172]},
+    {"furniture": "cushions", "at": [36, 222]},
+    {"furniture": "string-lights", "at": [96, 42]},
+    {"furniture": "exit-mat", "at": [176, 224]}
+  ],
+  "portals": [
+    {
+      "id": "exit",
+      "label": "Town Square",
+      "rect": [11, 15, 2, 1],
+      "to": "town-square",
+      "spawn": "from-living"
+    }
+  ],
+  "spawns": {"door": [12, 13]},
+  "features": [],
+  "capacity": 16,
+  "allowPrivate": true,
+  "voice": "room",
+  "ambience": "living-hum",
+  "tint": {"color": "#b3651c", "alpha": 0.14},
+  "background": "#1a110c",
+  "effects": [
+    {"type": "dust", "count": 18}
+  ]
+}

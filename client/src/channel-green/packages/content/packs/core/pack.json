@@ -1,0 +1,9 @@
+{
+  "id": "core",
+  "name": "Channel Green Core",
+  "version": "0.1.0",
+  "author": "ZeroTheory and Channel Green contributors",
+  "license": "CC-BY-SA-4.0",
+  "description": "The original pixel art, rooms and sounds that ship with Channel Green. All art is drawn from plain data in this folder.",
+  "homepage": "https://zerotheoryapp.tech"
+}

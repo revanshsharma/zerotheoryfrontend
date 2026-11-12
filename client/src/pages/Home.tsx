@@ -3,6 +3,7 @@ import { ArrowDownRight, ArrowUpRight, ChevronDown, ExternalLink, Menu, MoveUpRi
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { archiveItems, contactLinks, impactStats, partners, pillars, platformFeatures, siteContent } from "@/data/zeroTheory";
 import { PromptWars } from "@/components/PromptWars";
+import { ChannelGreenTeaser } from "@/components/ChannelGreenTeaser";
 
 // The gallery pulls in a dialog and a carousel; load it only when a visitor
 // actually opens a card, so the landing page stays light.
@@ -39,7 +40,7 @@ function Counter({ value, numeric }: { value: string; numeric?: number }) {
 
 function Nav() {
   const [open, setOpen] = useState(false);
-  const links = [["About", "#about"], ["Impact", "#impact"], ["Archive", "#archive"], ["2.0", "#next"], ["PromptWars", "#promptwars"], ["Community", "#community"], ["Contact", "#contact"]];
+  const links = [["About", "#about"], ["Impact", "#impact"], ["Archive", "#archive"], ["2.0", "#next"], ["PromptWars", "#promptwars"], ["Channel Green", "/channel-green"], ["Community", "#community"], ["Contact", "#contact"]];
   return <header className="absolute left-0 right-0 top-0 z-50"><div className="container flex h-20 items-center justify-between"><Logo className="h-12 md:h-14" /><nav className="hidden items-center gap-6 md:flex">{links.map(([label, href]) => <a key={label} href={href} className="focus-ring text-[10px] font-bold uppercase tracking-[0.15em] text-white/70 transition-colors hover:text-[#fcea10]">{label}</a>)}<a href="#join" className="focus-ring rounded-full bg-[#fcea10] px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.12em] text-[#1d1d1b] transition-transform hover:-translate-y-0.5 active:scale-[0.97]">Join the community</a></nav><button aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen(!open)} className="focus-ring grid h-10 w-10 place-items-center rounded-full border border-white/30 text-white md:hidden">{open ? <X size={19} /> : <Menu size={19} />}</button></div><AnimatePresence>{open && <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} className="mx-4 mt-1 rounded-2xl border border-white/15 bg-[#1d1d1b]/95 p-3 shadow-2xl backdrop-blur-xl md:hidden">{links.map(([label, href]) => <a onClick={() => setOpen(false)} key={label} href={href} className="block rounded-xl px-4 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white/85 hover:bg-white/10">{label}</a>)}<a onClick={() => setOpen(false)} href="#join" className="mt-2 block rounded-xl bg-[#fcea10] px-4 py-3 text-center text-sm font-bold uppercase tracking-[0.12em] text-[#1d1d1b]">Join the community</a></motion.div>}</AnimatePresence></header>;
 }
 
@@ -186,5 +187,5 @@ function Footer() {
 }
 
 export default function Home() {
-  return <main><Hero /><About /><Impact /><Archive /><NextVersion /><PromptWars /><Ecosystem /><Community /><Join /><Contact /><Footer /></main>;
+  return <main><Hero /><About /><Impact /><Archive /><NextVersion /><PromptWars /><ChannelGreenTeaser /><Ecosystem /><Community /><Join /><Contact /><Footer /></main>;
 }

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "porch-light",
+    "title": "Porch Light",
+    "artist": "Channel Green House Tape",
+    "bpm": 72,
+    "root": 48,
+    "scale": "major",
+    "progression": [0, 3, 4, 3],
+    "seed": 11,
+    "mood": "warm and unhurried",
+    "bars": 32
+  },
+  {
+    "id": "late-bus",
+    "title": "Late Bus Home",
+    "artist": "Channel Green House Tape",
+    "bpm": 84,
+    "root": 45,
+    "scale": "dorian",
+    "progression": [0, 3, 0, 4],
+    "seed": 23,
+    "mood": "sleepy, a little wistful",
+    "bars": 32
+  },
+  {
+    "id": "rooftop-static",
+    "title": "Rooftop Static",
+    "artist": "Channel Green House Tape",
+    "bpm": 66,
+    "root": 50,
+    "scale": "pentatonic",
+    "progression": [0, 2, 3, 4],
+    "seed": 37,
+    "mood": "open sky, slow thoughts",
+    "bars": 24
+  },
+  {
+    "id": "rainy-window",
+    "title": "Rainy Window",
+    "artist": "Channel Green House Tape",
+    "bpm": 60,
+    "root": 43,
+    "scale": "minor",
+    "progression": [0, 5, 3, 4],
+    "seed": 41,
+    "mood": "soft grey, reading",
+    "bars": 32
+  },
+  {
+    "id": "orange-hour",
+    "title": "Orange Hour",
+    "artist": "Channel Green House Tape",
+    "bpm": 92,
+    "root": 52,
+    "scale": "lydian",
+    "progression": [0, 1, 4, 0],
+    "seed": 59,
+    "mood": "golden, a bit dreamy",
+    "bars": 32
+  }
+]

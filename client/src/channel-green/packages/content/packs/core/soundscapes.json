@@ -1,0 +1,90 @@
+[
+  {
+    "id": "town-dusk",
+    "name": "Town at dusk",
+    "layers": [
+      {"type": "crickets", "gain": 0.25, "rate": 2.2},
+      {"type": "noise", "gain": 0.05, "freq": 600, "q": 0.6},
+      {"type": "chimes", "gain": 0.12, "freqs": [392, 523, 659, 784], "rate": 0.12}
+    ]
+  },
+  {
+    "id": "cafe-murmur",
+    "name": "Café murmur",
+    "layers": [
+      {"type": "noise", "gain": 0.1, "freq": 900, "q": 0.5},
+      {"type": "hum", "gain": 0.05, "freq": 110},
+      {"type": "chimes", "gain": 0.07, "freqs": [523, 659, 784], "rate": 0.08}
+    ]
+  },
+  {
+    "id": "living-hum",
+    "name": "Living room hum",
+    "layers": [
+      {"type": "hum", "gain": 0.07, "freq": 98},
+      {"type": "noise", "gain": 0.03, "freq": 400, "q": 0.7},
+      {"type": "chimes", "gain": 0.06, "freqs": [330, 494], "rate": 0.05}
+    ]
+  },
+  {
+    "id": "tv-hum",
+    "name": "TV lounge hum",
+    "layers": [
+      {"type": "hum", "gain": 0.08, "freq": 60},
+      {"type": "noise", "gain": 0.025, "freq": 250, "q": 0.8}
+    ]
+  },
+  {
+    "id": "night-roof",
+    "name": "Rooftop night",
+    "layers": [
+      {"type": "noise", "gain": 0.09, "freq": 300, "q": 0.4},
+      {"type": "crickets", "gain": 0.1, "rate": 1.4},
+      {"type": "drone", "gain": 0.05, "freqs": [73, 110, 147]}
+    ]
+  },
+  {
+    "id": "garden-breeze",
+    "name": "Garden breeze",
+    "layers": [
+      {"type": "noise", "gain": 0.08, "freq": 1200, "q": 0.3},
+      {"type": "crickets", "gain": 0.18, "rate": 2.6},
+      {"type": "chimes", "gain": 0.1, "freqs": [587, 740, 880], "rate": 0.1}
+    ]
+  },
+  {
+    "id": "listening-warm",
+    "name": "Listening room warmth",
+    "layers": [
+      {"type": "hum", "gain": 0.05, "freq": 55},
+      {"type": "noise", "gain": 0.02, "freq": 200, "q": 0.9}
+    ]
+  },
+  {
+    "id": "rain-room",
+    "name": "Rain on the window",
+    "layers": [
+      {"type": "rain", "gain": 0.4, "freq": 3000},
+      {"type": "rain", "gain": 0.2, "freq": 900},
+      {"type": "drone", "gain": 0.04, "freqs": [65, 98]}
+    ]
+  },
+  {
+    "id": "alley-night",
+    "name": "Alley at night",
+    "layers": [
+      {"type": "rain", "gain": 0.12, "freq": 2000},
+      {"type": "hum", "gain": 0.05, "freq": 80},
+      {"type": "drone", "gain": 0.03, "freqs": [55, 82]}
+    ]
+  },
+  {
+    "id": "quiet-pond",
+    "name": "Quiet pond",
+    "layers": [
+      {"type": "crickets", "gain": 0.14, "rate": 1.1},
+      {"type": "chimes", "gain": 0.1, "freqs": [440, 660], "rate": 0.04},
+      {"type": "noise", "gain": 0.02, "freq": 500, "q": 0.6}
+    ]
+  }
+]

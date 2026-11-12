@@ -1,0 +1,48 @@
+{
+  "id": "confession-wall",
+  "name": "Confession Wall",
+  "blurb": "Say the thing you cannot say out loud. Nobody will know it was you.",
+  "category": "signature",
+  "tiles": {
+    "legend": {"o": "concrete", "B": "alley-brick"},
+    "rows": ["BBBBBBBBBBBBBBBBBBBBBBBB", "BBBBBBBBBBBBBBBBBBBBBBBB", "BooooooooooooooooooooooB", "BooooooooooooooooooooooB", "BooooooooooooooooooooooB", "BooooooooooooooooooooooB", "BooooooooooooooooooooooB", "BooooooooooooooooooooooB", "BooooooooooooooooooooooB", "BooooooooooooooooooooooB", "BooooooooooooooooooooooB", "BooooooooooooooooooooooB", "BooooooooooooooooooooooB", "BBBBBBBBBBBooBBBBBBBBBBB"]
+  },
+  "objects": [
+    {"furniture": "confession-wall", "at": [152, 48]},
+    {"furniture": "lamp-post", "at": [64, 84]},
+    {"furniture": "lamp-post", "at": [304, 84]},
+    {"furniture": "crate", "at": [32, 60]},
+    {"furniture": "crate", "at": [336, 60]},
+    {"furniture": "puddle", "at": [96, 148]},
+    {"furniture": "puddle", "at": [240, 164]},
+    {"furniture": "bench-up", "at": [144, 140]},
+    {"furniture": "bench-up", "at": [224, 140]},
+    {"furniture": "string-lights", "at": [64, 42]},
+    {"furniture": "string-lights", "at": [224, 42]},
+    {"furniture": "candle", "at": [138, 126]},
+    {"furniture": "candle", "at": [256, 126]},
+    {"furniture": "pebbles", "at": [176, 184]},
+    {"furniture": "sign-quiet", "at": [288, 162]}
+  ],
+  "portals": [
+    {
+      "id": "exit",
+      "label": "Town Square",
+      "rect": [11, 13, 2, 1],
+      "to": "town-square",
+      "spawn": "from-wall"
+    }
+  ],
+  "spawns": {"alley": [12, 11], "door": [12, 11]},
+  "features": ["confession"],
+  "capacity": 30,
+  "allowPrivate": false,
+  "voice": "off",
+  "ambience": "alley-night",
+  "tint": {"color": "#0a0c1c", "alpha": 0.4},
+  "background": "#07080f",
+  "effects": [
+    {"type": "dust", "count": 8},
+    {"type": "rain", "count": 24, "color": "#7a98b0"}
+  ]
+}

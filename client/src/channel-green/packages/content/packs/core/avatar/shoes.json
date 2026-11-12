@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sneakers",
+    "name": "Sneakers",
+    "slot": "shoes",
+    "height": 2,
+    "sole": "W"
+  },
+  {
+    "id": "boots",
+    "name": "Boots",
+    "slot": "shoes",
+    "height": 3,
+    "sole": "K"
+  },
+  {
+    "id": "barefoot",
+    "name": "Barefoot",
+    "slot": "shoes",
+    "height": 0
+  }
+]

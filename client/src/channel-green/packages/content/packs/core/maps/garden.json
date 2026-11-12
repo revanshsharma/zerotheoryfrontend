@@ -1,0 +1,67 @@
+{
+  "id": "garden",
+  "name": "Garden",
+  "blurb": "Rows of herbs, a koi pond, a hammock between two trees. Nobody is in a hurry.",
+  "category": "social",
+  "features": [],
+  "capacity": 30,
+  "allowPrivate": true,
+  "voice": "proximity",
+  "ambience": "garden-breeze",
+  "tint": {"color": "#10285a", "alpha": 0.2},
+  "background": "#0b1f15",
+  "tiles": {
+    "legend": {".": "grass", ",": "grass-dark", "=": "stone-path", "h": "hedge-tile", "s": "soil"},
+    "rows": ["hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh", "h.....,............,............,h", "h...........,............,.......h", "h....,.........==.,............,.h", "h..........,...==.......,........h", "h...,.======================..,..h", "h.........,....==......,.........h", "h..,...........==............,...h", "h........,.....==.....,..........h", "h.,............==...........,....h", "================================.h", "================================.h", "h......,.......==...,............h", "h............,.==.........,......h", "h...ssssssss...==..sssssssss....,h", "h...ssssssss,..==..sssssssss.....h", "h...ssssssss...==.,sssssssss...,.h", "h...ssssssss...==..sssssssss.....h", "h...,..........==,.sssssssss..,..h", "h.........,....==......,.........h", "h..,............,............,...h", "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"]
+  },
+  "objects": [
+    {"furniture": "koi-pond", "at": [128, 80]},
+    {"furniture": "trellis", "at": [192, 192]},
+    {"furniture": "trellis", "at": [352, 80]},
+    {"furniture": "veg-patch", "at": [304, 256]},
+    {"furniture": "veg-patch", "at": [368, 256]},
+    {"furniture": "hammock", "at": [400, 108]},
+    {"furniture": "stone-lantern", "at": [224, 124]},
+    {"furniture": "stone-lantern", "at": [288, 172]},
+    {"furniture": "bench", "at": [96, 204]},
+    {"furniture": "bench", "at": [320, 204]},
+    {"furniture": "flowers", "at": [128, 96]},
+    {"furniture": "flowers-b", "at": [176, 96]},
+    {"furniture": "flowers", "at": [336, 80]},
+    {"furniture": "flowers-b", "at": [448, 192]},
+    {"furniture": "tree", "at": [36, 48]},
+    {"furniture": "tree", "at": [52, 272]},
+    {"furniture": "tree", "at": [148, 272]},
+    {"furniture": "tree", "at": [452, 32]},
+    {"furniture": "tree", "at": [484, 208]},
+    {"furniture": "tree", "at": [452, 288]},
+    {"furniture": "tree", "at": [36, 96]},
+    {"furniture": "pine", "at": [96, 16]},
+    {"furniture": "pine", "at": [432, 64]},
+    {"furniture": "pine", "at": [192, 256]},
+    {"furniture": "pine", "at": [480, 128]},
+    {"furniture": "bush", "at": [32, 192]},
+    {"furniture": "bush", "at": [128, 48]},
+    {"furniture": "bush", "at": [480, 208]},
+    {"furniture": "bush", "at": [80, 256]},
+    {"furniture": "bush", "at": [416, 240]},
+    {"furniture": "bush", "at": [352, 48]},
+    {"furniture": "stones", "at": [240, 256]},
+    {"furniture": "mushrooms", "at": [448, 290]},
+    {"furniture": "lily-pond", "at": [480, 136]}
+  ],
+  "portals": [
+    {
+      "id": "exit",
+      "label": "Town Square",
+      "rect": [0, 10, 1, 2],
+      "to": "town-square",
+      "spawn": "from-garden"
+    }
+  ],
+  "spawns": {"gate": [2, 10]},
+  "effects": [
+    {"type": "petals", "count": 22},
+    {"type": "fireflies", "count": 28, "color": "#d9ff9a"}
+  ]
+}

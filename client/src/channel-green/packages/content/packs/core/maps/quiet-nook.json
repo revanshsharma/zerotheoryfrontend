@@ -1,0 +1,52 @@
+{
+  "id": "quiet-nook",
+  "name": "Quiet Pond",
+  "blurb": "No voices here. A wave, a heart, a shared silence under the moon.",
+  "category": "quiet",
+  "features": [],
+  "capacity": 12,
+  "allowPrivate": true,
+  "voice": "off",
+  "quiet": true,
+  "ambience": "quiet-pond",
+  "tint": {"color": "#06103a", "alpha": 0.38},
+  "background": "#050b1e",
+  "tiles": {
+    "legend": {",": "grass-dark", "=": "stone-path", "h": "hedge-tile"},
+    "rows": ["hhhhhhhhhhhhhhhhhhhh", "h,,,,,,,,,,,,,,,,,,h", "h,,,,,,,,,,,,,,,,,,h", "h,,,,,,,,,,,,,,,,,,h", "h,,,,,,,,,,,,,,,,,,h", "h,,,,,,,,,,,,,,,,,,h", "h,,,,,,,,,,,,,,,,,,h", "h,,,,,,,,,,,,,,,,,,h", "h,,,,,,,,,,,,,,,,,,h", "h,,,,,,,,,,,,,,,,,,h", "h,,,,,,,,,,,,,,,,,,h", "h,,,,==========,,,,h", "h,,,,,,,,==,,,,,,,,h", "h,,,,,,,,==,,,,,,,,h", "h,,,,,,,,==,,,,,,,,h", "hhhhhhhhh==hhhhhhhhh"]
+  },
+  "objects": [
+    {"furniture": "koi-pond", "at": [48, 80]},
+    {"furniture": "crescent", "at": [240, 72]},
+    {"furniture": "crescent", "at": [48, 168]},
+    {"furniture": "sign-quiet", "at": [208, 186]},
+    {"furniture": "bench", "at": [192, 156]},
+    {"furniture": "bench", "at": [64, 188]},
+    {"furniture": "mushrooms", "at": [256, 194]},
+    {"furniture": "mushrooms", "at": [32, 82]},
+    {"furniture": "flowers-b", "at": [192, 64]},
+    {"furniture": "flowers", "at": [112, 48]},
+    {"furniture": "lily-pond", "at": [224, 74]},
+    {"furniture": "pine", "at": [26, 6]},
+    {"furniture": "pine", "at": [266, 6]},
+    {"furniture": "pine", "at": [266, 150]},
+    {"furniture": "pine", "at": [26, 198]},
+    {"furniture": "bush", "at": [96, 224]},
+    {"furniture": "bush", "at": [224, 224]},
+    {"furniture": "bush", "at": [48, 48]}
+  ],
+  "portals": [
+    {
+      "id": "exit",
+      "label": "Town Square",
+      "rect": [9, 15, 2, 1],
+      "to": "town-square",
+      "spawn": "from-quiet"
+    }
+  ],
+  "spawns": {"path": [10, 13]},
+  "effects": [
+    {"type": "fireflies", "count": 18, "color": "#bfe8ff"},
+    {"type": "stars", "count": 30, "color": "#f1e3c1"}
+  ]
+}

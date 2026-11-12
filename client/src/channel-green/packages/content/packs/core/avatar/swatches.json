@@ -1,0 +1,189 @@
+{
+  "skins": [
+    {
+      "id": "porcelain",
+      "name": "Porcelain",
+      "main": "#f6dcc4"
+    },
+    {
+      "id": "peach",
+      "name": "Peach",
+      "main": "#efc19b"
+    },
+    {
+      "id": "honey",
+      "name": "Honey",
+      "main": "#deaa78"
+    },
+    {
+      "id": "caramel",
+      "name": "Caramel",
+      "main": "#bf8656"
+    },
+    {
+      "id": "cocoa",
+      "name": "Cocoa",
+      "main": "#94603f"
+    },
+    {
+      "id": "espresso",
+      "name": "Espresso",
+      "main": "#6a4129"
+    },
+    {
+      "id": "olive",
+      "name": "Olive",
+      "main": "#c8ad6e"
+    },
+    {
+      "id": "moss",
+      "name": "Moss",
+      "main": "#a3b86f"
+    }
+  ],
+  "hairColors": [
+    {
+      "id": "ink",
+      "name": "Ink",
+      "main": "#2b211e"
+    },
+    {
+      "id": "chestnut",
+      "name": "Chestnut",
+      "main": "#5b3a28"
+    },
+    {
+      "id": "auburn",
+      "name": "Auburn",
+      "main": "#8e3f26"
+    },
+    {
+      "id": "honey-blonde",
+      "name": "Honey blonde",
+      "main": "#d8b062"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "main": "#cfcfc7"
+    },
+    {
+      "id": "forest",
+      "name": "Forest",
+      "main": "#2f6b45"
+    },
+    {
+      "id": "dusk-orange",
+      "name": "Dusk orange",
+      "main": "#e0723a"
+    },
+    {
+      "id": "plum",
+      "name": "Plum",
+      "main": "#6e3d66"
+    },
+    {
+      "id": "tide-blue",
+      "name": "Tide blue",
+      "main": "#4a7ea6"
+    }
+  ],
+  "clothColors": [
+    {
+      "id": "cream",
+      "name": "Cream",
+      "main": "#f1e3c1"
+    },
+    {
+      "id": "offwhite",
+      "name": "Off-white",
+      "main": "#faf5e8"
+    },
+    {
+      "id": "forest-green",
+      "name": "Forest green",
+      "main": "#2f6b45"
+    },
+    {
+      "id": "moss",
+      "name": "Moss",
+      "main": "#52763a"
+    },
+    {
+      "id": "olive",
+      "name": "Olive",
+      "main": "#7d8a45"
+    },
+    {
+      "id": "orange",
+      "name": "Soft orange",
+      "main": "#e8955a"
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "main": "#b5543a"
+    },
+    {
+      "id": "charcoal",
+      "name": "Charcoal",
+      "main": "#3a3d39"
+    },
+    {
+      "id": "slate",
+      "name": "Slate",
+      "main": "#5c6a68"
+    },
+    {
+      "id": "dusk-blue",
+      "name": "Dusk blue",
+      "main": "#46688a"
+    },
+    {
+      "id": "plum",
+      "name": "Plum",
+      "main": "#6b4a73"
+    },
+    {
+      "id": "rose",
+      "name": "Rose",
+      "main": "#d98a8a"
+    },
+    {
+      "id": "mustard",
+      "name": "Mustard",
+      "main": "#d8a93f"
+    },
+    {
+      "id": "neon",
+      "name": "Neon green",
+      "main": "#8ff25e"
+    }
+  ],
+  "bodies": [
+    {
+      "id": "petite",
+      "name": "Petite",
+      "legLength": 4,
+      "torsoWidth": 8
+    },
+    {
+      "id": "regular",
+      "name": "Regular",
+      "legLength": 6,
+      "torsoWidth": 8
+    },
+    {
+      "id": "tall",
+      "name": "Tall",
+      "legLength": 8,
+      "torsoWidth": 8
+    },
+    {
+      "id": "round",
+      "name": "Round",
+      "legLength": 5,
+      "torsoWidth": 10
+    }
+  ]
+}
